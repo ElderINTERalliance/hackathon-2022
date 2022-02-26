@@ -1,53 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 body {
-  background-color: #1d2020;
-  color: whitesmoke;
-  font-family: "Inconsolata", monospace;
-  font-size: large;
-}
-
-@keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    background-color: #1d2020;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
 }

@@ -1,8 +1,8 @@
 {
   "start": {
     "content": [
-      { "text": "Hello?", "delay": 2 },
-      { "text": "heyo mate?", "delay": 1 }
+      { "text": "Hello?", "delay": 1, "speaker": "Jeff" },
+      { "text": "heyo mate?", "delay": 0.5, "speaker": "Narrator" }
     ],
     "items": [{ "name": "sword", "text": "wow, that's a sword" }],
     "buttons": [
@@ -13,17 +13,8 @@
 
   "next": {
     "content": [
-      { "text": "Hello?", "delay": 1 },
-      { "text": "Hello?", "delay": 1 }
-    ],
-    "items": [],
-    "buttons": [{ "text": "asdf", "id": "start" }]
-  },
-
-  "other-next": {
-    "content": [
-      { "text": "Hello?", "delay": 1 },
-      { "text": "Hello?", "delay": 1 }
+      { "text": "Hello?", "delay": 0.5, "speaker": "Jeff" },
+      { "text": "Hello?", "delay": 0.5, "speaker": "Narrator" }
     ],
     "items": [],
     "buttons": [{ "text": "asdf", "id": "start" }]

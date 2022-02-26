@@ -1,4 +1,4 @@
-const FADE_DURATION = 1000;
+const FADE_DURATION = 500;
 
 /**
  * 
@@ -15,11 +15,15 @@ function errorOnInvalidData(data) {
 }
 
 // TODO: make async
-function showContent(text, delay) {
+function showContent(text, delay, speaker) {
     const storyArea = document.getElementById("story-area");
     const content = document.createElement("div");
-    content.textContent = text;
-    content.className = "story-element fade-in";
+    if (speaker.toLowerCase() === "narrator") {
+        content.innerHTML = text;
+    } else {
+        content.innerHTML = speaker + "> " + text;
+    }
+    content.className = "story-element";
     content.style.display = "none";
 
     $(content).delay(delay * 1000).fadeIn(FADE_DURATION);
@@ -32,7 +36,7 @@ function showChoices(buttons, roomId, data, delay) {
     const choiceList = document.createElement("div");
     const roomName = `choice-${roomId}`;
     choiceList.id = roomName;
-    choiceList.className = "choice-list fade-in"
+    choiceList.className = "choice-list"
 
     for (const button of buttons) {
         const buttonEle = document.createElement("button");
@@ -71,9 +75,9 @@ function makeChoice(roomId, data, buttonObj) {
 
 function playThroughRoom(roomId, data) {
     let runningDelay = 0;
-    for (const { text, delay } of data[roomId].content) {
+    for (const { text, delay, speaker } of data[roomId].content) {
         runningDelay += delay;
-        showContent(text, runningDelay);
+        showContent(text, runningDelay, speaker);
     }
     runningDelay += 1;
     showChoices(data[roomId].buttons, roomId, data, runningDelay);
