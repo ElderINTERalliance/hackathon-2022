@@ -1,0 +1,31 @@
+{
+  "start": {
+    "content": [
+      { "text": "Hello?", "delay": "100" },
+      { "text": "heyo mate?", "delay": "100" }
+    ],
+    "items": [{ "name": "sword", "text": "wow, that's a sword" }],
+    "buttons": [
+      { "text": "You feel a sense of unease", "id": "next" },
+      { "text": "You feel an illusion of free choice", "id": "next" }
+    ]
+  },
+
+  "next": {
+    "content": [
+      { "text": "Hello?", "delay": "100" },
+      { "text": "Hello?", "delay": "100" }
+    ],
+    "items": [],
+    "buttons": [{ "text": "asdf", "id": "start" }]
+  },
+
+  "other-next": {
+    "content": [
+      { "text": "Hello?", "delay": "100" },
+      { "text": "Hello?", "delay": "100" }
+    ],
+    "items": [],
+    "buttons": [{ "text": "asdf", "id": "start" }]
+  }
+}
