@@ -1,4 +1,5 @@
 const FADE_DURATION = 500;
+const startRoom = localStorage.getItem("savedRoom"); 
 
 /**
  * 
@@ -74,6 +75,7 @@ function makeChoice(roomId, data, buttonObj) {
 }
 
 function playThroughRoom(roomId, data) {
+    localStorage.setItem("savedRoom", roomId);
     let runningDelay = 0;
     for (const { text, delay, speaker } of data[roomId].content) {
         runningDelay += delay;
@@ -84,7 +86,13 @@ function playThroughRoom(roomId, data) {
 }
 
 function startGame(script) {
-    playThroughRoom("start", script);
+    if (startRoom) {
+        playThroughRoom(startRoom, script);
+    }
+    else {
+        playThroughRoom("start", script);
+    }
+    
 }
 
 fetch("./script.json")
