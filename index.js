@@ -1,3 +1,4 @@
+const FADE_DURATION = 1000;
 
 /**
  * 
@@ -19,8 +20,9 @@ function showContent(text, delay) {
     const content = document.createElement("div");
     content.textContent = text;
     content.className = "story-element fade-in";
+    content.style.display = "none";
 
-    content.style.animationDelay = `${delay}s`;
+    $(content).delay(delay * 1000).fadeIn(FADE_DURATION);
 
     storyArea.appendChild(content);
 }
@@ -31,7 +33,6 @@ function showChoices(buttons, roomId, data, delay) {
     const roomName = `choice-${roomId}`;
     choiceList.id = roomName;
     choiceList.className = "choice-list fade-in"
-    choiceList.style.animationDelay = `${delay}s`;
 
     for (const button of buttons) {
         const buttonEle = document.createElement("button");
@@ -39,11 +40,17 @@ function showChoices(buttons, roomId, data, delay) {
 
         buttonEle.textContent = button.text;
         buttonEle.onclick = function () { makeChoice(button.id, data, this) };
+
         buttonEle.id = linkName;
+        buttonEle.style.display = "none";
+
+        $(buttonEle).delay(delay * 1000).fadeIn(FADE_DURATION);
+
         choiceList.appendChild(buttonEle);
     }
 
     const storyArea = document.getElementById("story-area");
+    console.log("ran");
     storyArea.appendChild(choiceList);
 }
 
@@ -66,10 +73,9 @@ function playThroughRoom(roomId, data) {
     let runningDelay = 0;
     for (const { text, delay } of data[roomId].content) {
         runningDelay += delay;
-        console.log(delay, runningDelay);
         showContent(text, runningDelay);
     }
-    runningDelay += 500;
+    runningDelay += 1;
     showChoices(data[roomId].buttons, roomId, data, runningDelay);
 }
 

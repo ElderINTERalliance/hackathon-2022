@@ -2,7 +2,7 @@
   "start": {
     "content": [
       { "text": "Hello?", "delay": 2 },
-      { "text": "heyo mate?", "delay": 2 }
+      { "text": "heyo mate?", "delay": 1 }
     ],
     "items": [{ "name": "sword", "text": "wow, that's a sword" }],
     "buttons": [
