@@ -1,5 +1,5 @@
 const FADE_DURATION = 500;
-const startRoom = localStorage.getItem("savedRoom"); 
+const startRoom = localStorage.getItem("savedRoom");
 
 /**
  * 
@@ -92,7 +92,7 @@ function startGame(script) {
     else {
         playThroughRoom("start", script);
     }
-    
+
 }
 
 fetch("./script.json")
