@@ -18,6 +18,10 @@ function showContent(text, delay) {
     const storyArea = document.getElementById("story-area");
     const content = document.createElement("div");
     content.textContent = text;
+    content.className = "story-element fade-in";
+
+    content.style.animationDelay = `${delay}s`;
+
     storyArea.appendChild(content);
 }
 
@@ -42,27 +46,32 @@ function showChoices(buttons, roomId, data) {
 }
 
 function makeChoice(roomId, data, buttonObj) {
-    console.log("this", buttonObj);
+    // hide all other choices
     for (const ele of buttonObj.parentElement.children) {
         ele.disabled = "disabled"; // we can't click anything in the past
 
-        if (ele != buttonObj) { // if we didn't click the button 
-            ele.style.display = "none";
+        if (ele == buttonObj) {
+            ele.className = "chosen";
+        } else {
+            ele.className = "not-chosen";
         }
     }
 
-    playThroughRoom(data[roomId], roomId, data);
+    playThroughRoom(roomId, data);
 }
 
-function playThroughRoom(roomData, roomId, data) {
-    for (const { text, delay } of roomData.content) {
-        showContent(text, delay);
+function playThroughRoom(roomId, data) {
+    let runningDelay = 0;
+    for (const { text, delay } of data[roomId].content) {
+        runningDelay += delay;
+        console.log(delay, runningDelay);
+        showContent(text, runningDelay);
     }
-    showChoices(roomData.buttons, roomId, data);
+    showChoices(data[roomId].buttons, roomId, data);
 }
 
 function startGame(script) {
-    playThroughRoom(script.start, "start", script);
+    playThroughRoom("start", script);
 }
 
 fetch("./script.json")
