@@ -1,14 +1,54 @@
 {
   "start": {
     "content": [
-      { "text": "Hello?", "delay": 1, "speaker": "Jeff" },
-      { "text": "heyo mate?", "delay": 0.5, "speaker": "Narrator" }
+      { "text": "You find yourself in a place unlike any other;", "delay": 1, "speaker": "Narrator" },
+      { "text": "you cannot remember how you got here.", "delay": 1, "speaker": "Narrator" },
+      { "text": "The floor beneath you is cold, and you feel lighter than before.", "delay": 1, "speaker": "Narrator" },
+      { "text": "Around you there is a <b>window, a door, and a suitcase</b>.", "delay": 2, "speaker": "Narrator" }
+      
     ],
-    "items": [{ "name": "sword", "text": "wow, that's a sword" }],
     "buttons": [
-      { "text": "You feel a sense of unease", "id": "next" },
-      { "text": "You feel an illusion of free choice", "id": "next" }
+      { "text": "Approach Window", "id": "window" },
+      { "text": "Approach Door", "id": "next" }
     ]
+  },
+  "window": {
+    "content": [
+      { "text": "You approach the window.", "delay": 1, "speaker": "Narrator" },
+      { "text": "Looking through it, you see that you are on a space station", "delay": 1, "speaker": "Narrator" },
+      
+      { "text": "<pre>===================================================================================================</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                                                 #</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#            o                                                                                    #</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                             o                                      .                            #</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                                                 #</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                 .                                      o        #</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                                                 #</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                  *                              #</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                                              ===#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                                       ====###@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                      .                         ====###@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                           ====###@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                                      ====###@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                               *                                  ====###@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                               ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                           ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                        ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                     ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#             .                                     ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                                 ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                               ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                  '                          ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                           ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                          ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                         ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>#                                        ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>===================================================================================================</pre>", "delay": 0.1, "speaker": "Narrator"}
+
+
+
+    ],
+    "buttons": [{ "text": "asdf", "id": "start" }]
   },
 
   "next": {
@@ -16,7 +56,6 @@
       { "text": "Hello?", "delay": 0.5, "speaker": "Jeff" },
       { "text": "Hello?", "delay": 0.5, "speaker": "Narrator" }
     ],
-    "items": [],
     "buttons": [{ "text": "asdf", "id": "start" }]
   }
 }
