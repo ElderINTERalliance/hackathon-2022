@@ -1,8 +1,24 @@
-.fade-in {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+
+body {
+  background-color: #1d2020;
+  color: whitesmoke;
+  font-family: "Inconsolata", monospace;
+  font-size: large;
+}
+
+.fade-in::before {
+  visibility: hidden;
+  opacity: 0;
   background: magenta;
-  transition-timing-function: linear;
+}
+
+.fade-in {
+  animation: FadeIn 1s linear;
+  visibility: visible;
+  /* transition-timing-function: linear;
   animation-name: FadeIn;
-  animation-duration: 2s;
+  animation-duration: 2s; */
 }
 
 @keyframes FadeIn {

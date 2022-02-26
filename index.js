@@ -26,10 +26,12 @@ function showContent(text, delay) {
 }
 
 // returns a div full of buttons
-function showChoices(buttons, roomId, data) {
+function showChoices(buttons, roomId, data, delay) {
     const choiceList = document.createElement("div");
     const roomName = `choice-${roomId}`;
     choiceList.id = roomName;
+    choiceList.className = "choice-list fade-in"
+    choiceList.style.animationDelay = `${delay}s`;
 
     for (const button of buttons) {
         const buttonEle = document.createElement("button");
@@ -67,7 +69,8 @@ function playThroughRoom(roomId, data) {
         console.log(delay, runningDelay);
         showContent(text, runningDelay);
     }
-    showChoices(data[roomId].buttons, roomId, data);
+    runningDelay += 500;
+    showChoices(data[roomId].buttons, roomId, data, runningDelay);
 }
 
 function startGame(script) {
