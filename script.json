@@ -377,8 +377,7 @@
       }
     ],
     "buttons": [
-      { "text": "Ask: \"What is going on here?\"", "id": "q2_2" },
-      { "text": "Leave", "id": "cafeteria_2" }
+      { "text": "Ask: \"What is going on here?\"", "id": "q2_2" }
     ]
   },
 
@@ -408,8 +407,7 @@
       }
     ],
     "buttons": [
-      { "text": "Ask: \"Who are you?\"", "id": "q1_2" },
-      { "text": "Leave", "id": "cafeteria_2" }
+      { "text": "Ask: \"Who are you?\"", "id": "q1_2" }
     ]
   },
 
