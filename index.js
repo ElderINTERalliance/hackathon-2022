@@ -90,10 +90,14 @@ function makeChoice(roomId, data, buttonObj) {
         }
     }
     if (roomId == "load") {
-        if (!startRoom) {
+        if (!startRoom || startRoom === "startup") {
+            showContent("Error! Saved game could not be found.", 0, "Narrator");
+            showContent("Starting game...", 0.5, "Narrator");
+            showContent("", 3, "Narrator");
             playThroughRoom("start", data);
-        }
-        else { playThroughRoom(startRoom, data); };
+        } else {
+            playThroughRoom(startRoom, data);
+        };
     } else {
         playThroughRoom(roomId, data);
     }
