@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 body {
   background-color: #1d2020;
   color: whitesmoke;
-  font-family: "Inconsolata", monospace;
+  font-family: "Syne Mono", monospace;
   font-size: large;
 }
 

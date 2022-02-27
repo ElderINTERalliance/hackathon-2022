@@ -1,5 +1,6 @@
 const FADE_DURATION = 500;
 const startRoom = localStorage.getItem("savedRoom");
+const $target = $('html,body');
 
 /**
  * 
@@ -80,9 +81,11 @@ function playThroughRoom(roomId, data) {
     for (const { text, delay, speaker } of data[roomId].content) {
         runningDelay += delay;
         showContent(text, runningDelay, speaker);
+        $target.delay(delay * 1000).animate({ scrollTop: $target.height() },);
     }
     runningDelay += 1;
     showChoices(data[roomId].buttons, roomId, data, runningDelay);
+    $target.delay(delay * 1000).animate({ scrollTop: $target.height() },);
 }
 
 function startGame(script) {
