@@ -28,9 +28,9 @@ pre {
   max-height: 2px;
   height: 1px;
   border-width: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(116, 116, 116);
   font-size: 0;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(116, 116, 116);
   margin-top: 1;
   margin-bottom: 1;
 }
@@ -72,4 +72,33 @@ pre {
 .choice:hover {
   background-color: lime;
   color: white;
+}
+
+.chosen:disabled {
+  background-color: rgb(122, 122, 122);
+  color: rgb(34, 34, 34);
+  border: 2px solid rgb(77, 121, 77);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.not-chosen:disabled {
+  background-color: rgb(122, 122, 122);
+  color: rgb(34, 34, 34);
+  border: 2px solid rgb(119, 71, 71);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  font-weight: 100;
 }
