@@ -1,12 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+
 body {
-  background-color: #1d2020;
+  background-color: #161616;
   color: whitesmoke;
   font-family: "Syne Mono", monospace;
   font-size: large;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 pre {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+#story-area {
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  margin: 0;
+  padding: 0;
+}
+
+#spacer {
+  justify-content: left;
+  text-align: left;
+  max-height: 2px;
+  height: 1px;
+  border-width: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 0;
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 1;
+  margin-bottom: 1;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 25px;
+  color: whitesmoke;
+  margin-left: 0;
+  padding-left: 0;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: whitesmoke;
+  }
+}
+
+.choice {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: 100;
+  border: 2px solid lime;
+}
+
+.choice:hover {
+  background-color: lime;
+  color: white;
 }

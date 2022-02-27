@@ -1,6 +1,6 @@
-const FADE_DURATION = 500;
+const FADE_DURATION = 100;
 const startRoom = localStorage.getItem("savedRoom");
-const $target = $('html,body');
+const storyArea = document.getElementById("story-area");
 
 /**
  * 
@@ -18,7 +18,6 @@ function errorOnInvalidData(data) {
 
 // TODO: make async
 function showContent(text, delay, speaker) {
-    const storyArea = document.getElementById("story-area");
     const content = document.createElement("div");
     if (speaker.toLowerCase() === "narrator") {
         content.innerHTML = text;
@@ -28,10 +27,26 @@ function showContent(text, delay, speaker) {
     content.className = "story-element";
     content.style.display = "none";
 
-    $(content).delay(delay * 1000).fadeIn(FADE_DURATION);
+    scrollFade(content, delay)
 
     storyArea.appendChild(content);
 }
+
+function scrollFade(element, delay) {
+    $(element).delay(delay * 1000).fadeIn(FADE_DURATION).queue(function (nxt) {
+        $('body')[0].scrollIntoView(false);
+        nxt();
+    });
+};
+
+function spacerCreate(parentEle, delay) {
+    const spacer = document.createElement("div");
+    spacer.id = "spacer";
+    spacer.style.display = "none";
+    scrollFade(spacer, delay);
+    parentEle.appendChild(spacer);
+};
+
 
 // returns a div full of buttons
 function showChoices(buttons, roomId, data, delay) {
@@ -39,7 +54,7 @@ function showChoices(buttons, roomId, data, delay) {
     const roomName = `choice-${roomId}`;
     choiceList.id = roomName;
     choiceList.className = "choice-list"
-
+    spacerCreate(choiceList, delay);
     for (const button of buttons) {
         const buttonEle = document.createElement("button");
         const linkName = `choice-${roomId}-to-${button.id}`;
@@ -49,14 +64,15 @@ function showChoices(buttons, roomId, data, delay) {
 
         buttonEle.id = linkName;
         buttonEle.style.display = "none";
+        buttonEle.className = "choice"
 
-        $(buttonEle).delay(delay * 1000).fadeIn(FADE_DURATION);
+        scrollFade(buttonEle, delay);
 
         choiceList.appendChild(buttonEle);
     }
 
-    const storyArea = document.getElementById("story-area");
     console.log("ran");
+    spacerCreate(choiceList, delay);
     storyArea.appendChild(choiceList);
 }
 
@@ -71,9 +87,15 @@ function makeChoice(roomId, data, buttonObj) {
             ele.className = "not-chosen";
         }
     }
-
-    playThroughRoom(roomId, data);
-}
+    if (roomId == "load") {
+        if (!startRoom) {
+            playThroughRoom("start", data);
+        }
+        else { playThroughRoom(startRoom, data); };
+    } else {
+        playThroughRoom(roomId, data);
+    }
+};
 
 function playThroughRoom(roomId, data) {
     localStorage.setItem("savedRoom", roomId);
@@ -81,20 +103,33 @@ function playThroughRoom(roomId, data) {
     for (const { text, delay, speaker } of data[roomId].content) {
         runningDelay += delay;
         showContent(text, runningDelay, speaker);
-        $target.delay(delay * 1000).animate({ scrollTop: $target.height() },);
     }
     runningDelay += 1;
     showChoices(data[roomId].buttons, roomId, data, runningDelay);
-    $target.delay(delay * 1000).animate({ scrollTop: $target.height() },);
 }
 
+function loadingAnim() {
+    i = 0;
+    setInterval(function () {
+
+        if (i == 3) {
+            return
+        }
+        else {
+            $("#loading").append(".");
+            i++;
+        }
+
+    }, 500);
+};
+
+loadingAnim();
+
 function startGame(script) {
-    if (startRoom) {
-        playThroughRoom(startRoom, script);
-    }
-    else {
-        playThroughRoom("start", script);
-    }
+    playThroughRoom("startup", script);
+}
+
+function startupAnim() {
 
 }
 
