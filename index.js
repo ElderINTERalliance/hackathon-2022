@@ -54,7 +54,9 @@ function showChoices(buttons, roomId, data, delay) {
     const roomName = `choice-${roomId}`;
     choiceList.id = roomName;
     choiceList.className = "choice-list"
-    spacerCreate(choiceList, delay);
+    if (buttons.length > 0)
+        spacerCreate(choiceList, delay);
+
     for (const button of buttons) {
         const buttonEle = document.createElement("button");
         const linkName = `choice-${roomId}-to-${button.id}`;
@@ -71,8 +73,8 @@ function showChoices(buttons, roomId, data, delay) {
         choiceList.appendChild(buttonEle);
     }
 
-    console.log("ran");
-    spacerCreate(choiceList, delay);
+    if (buttons.length > 0)
+        spacerCreate(choiceList, delay);
     storyArea.appendChild(choiceList);
 }
 
