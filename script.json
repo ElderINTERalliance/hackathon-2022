@@ -45,7 +45,7 @@
       { "text": "<pre>|<b>                                        ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
       { "text": "<pre>===================================================================================================</pre>", "delay": 0.1, "speaker": "Narrator"},
 
-      { "text": "orbiting a planet that you have never seen before.", "delay": 1, "speaker": "Narrator" }
+      { "text": "orbiting a planet that you have never seen before.", "delay": 2, "speaker": "Narrator" }
 
     ],
     "buttons": [{ "text": "Approach Door", "id": "door" }]
@@ -65,7 +65,7 @@
     "content": [
       { "text": "The stranger looks at you blankly.", "delay": 1, "speaker": "Narrator" }
     ],
-    "buttons": [{ "text": "Ask: \"Who are you?\"", "id": "q1_1" }, { "text": "Ask: \"What is going on here?\"", "id": "q2_1" }, { "text": "Leave", "id": "cafeteria_2" }]
+    "buttons": [{ "text": "Ask: \"Who are you?\"", "id": "q1_1" }, { "text": "Ask: \"What is going on here?\"", "id": "q2_1" }]
   },
 
   "q1_1": {
@@ -112,15 +112,45 @@
 
   "cafeteria_2": {
     "content": [
+      { "text": "Without warning, a door is kicked open and several people enter the room.", "delay": 1, "speaker": "Narrator" },
+      { "text": "They are all carrying weapons and don't seem happy that you are there.", "delay": 1, "speaker": "Narrator" },
+      { "text": "That's the <b>Red Party</b>!", "delay": 2, "speaker": "Zack" },
+      { "text": "Zack makes a break for it down a hallway.", "delay": 1, "speaker": "Narrator" },
       { "text": "You are faced with a choice:", "delay": 1, "speaker": "Narrator" }
     ],
-    "buttons": [{ "text": "Follow Zack", "id": "end_1" }]
+    "buttons": [{ "text": "Follow Zack", "id": "end_1" }, { "text": "Surrender to the Red Party", "id": "end_2" }, { "text": "Run toward the Blue end of the cafeteria", "id": "end_3_1" }]
   },
 
   "end_1": {
     "content": [
       { "text": "Follow me!", "delay": 1, "speaker": "Zack" },
-      { "text": "You chase after Zack, hearing the shouts and footsteps of the <b>Red Party</b> behind you.", "delay": 1, "speaker": "Narrator" }
+      { "text": "You chase after Zack, hearing the shouts and footsteps of the <b>Red Party</b> chasing you.", "delay": 1, "speaker": "Narrator" }
+    ],
+    "buttons": []
+  },
+
+  "end_2": {
+    "content": [
+      { "text": "Stop!", "delay": 1, "speaker": "Jeff" },
+      { "text": "You freeze and put your hands up.", "delay": 5, "speaker": "Narrator" },
+      { "text": "Ending 2", "delay": 5, "speaker": "Narrator" }
+    ],
+    "buttons": []
+  },
+
+  "end_3_1": {
+    "content": [
+      { "text": "You run across the cafeteria, hearing the shouts and footsteps of the <b>Red Party</b> chasing you.", "delay": 1, "speaker": "Narrator" },
+      { "text": "After running through a doorway on the blue side of the room,", "delay": 1, "speaker": "Narrator" },
+      { "text": "the door closes behind you.", "delay": 1, "speaker": "Narrator" },
+      { "text": "You are surrounded by a different group of people.", "delay": 1, "speaker": "Narrator" }
+    ],
+    "buttons": [{ "text": "Ask: \"Who are you?\"", "id": "end_3_2" }]
+  },
+
+  "end_3_2": {
+    "content": [
+      { "text": "Ending 3", "delay": 5, "speaker": "Narrator" }
     ],
     "buttons": []
   }
