@@ -1,26 +1,11 @@
 {
   "start": {
     "content": [
-      {
-        "text": "You find yourself in a place unlike any other;",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "you cannot remember how you got here.",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "The floor beneath you is cold, and you feel lighter than before.",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "Around you there is a <b>window</b> and a <b>door</b>.",
-        "delay": 2,
-        "speaker": "Narrator"
-      }
+      { "text": "You find yourself in a place unlike any other;", "delay": 1, "speaker": "Narrator" },
+      { "text": "you cannot remember how you got here.", "delay": 1, "speaker": "Narrator" },
+      { "text": "The floor beneath you is cold, and you feel lighter than before.", "delay": 1, "speaker": "Narrator" },
+      { "text": "Around you there is a <b>window</b> and a <b>door</b>.", "delay": 2, "speaker": "Narrator" }
+      
     ],
     "buttons": [
       { "text": "Approach Window", "id": "window" },
@@ -30,296 +15,104 @@
   "window": {
     "content": [
       { "text": "You approach the window.", "delay": 1, "speaker": "Narrator" },
-      {
-        "text": "Looking through it, you see that you are on a space station",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
+      { "text": "Looking through it, you see that you are on a space station", "delay": 1, "speaker": "Narrator" },
+      
+      { "text": "<pre>===================================================================================================</pre>", "delay": 3, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                                                 </b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>            o                                                                                    </b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                             o                                      .                            </b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                                                 </b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                 .                                      o        </b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                                                 </b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                  *                              </b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                                              ===</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                                       ====###@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                      .                         ====###@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                           ====###@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                                      ====###@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                               *                                  ====###@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                               ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                           ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                        ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                     ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>             .                                     ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                                 ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                               ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                  '                          ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                           ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                          ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                         ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>|<b>                                        ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>", "delay": 0.1, "speaker": "Narrator"},
+      { "text": "<pre>===================================================================================================</pre>", "delay": 0.1, "speaker": "Narrator"},
 
-      {
-        "text": "<pre>===================================================================================================</pre>",
-        "delay": 3,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                                                 </b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>            o                                                                                    </b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                             o                                      .                            </b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                                                 </b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                 .                                      o        </b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                                                 </b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                  *                              </b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                                              ===</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                                       ====###@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                      .                         ====###@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                           ====###@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                                      ====###@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                               *                                  ====###@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                               ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                           ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                        ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                     ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>             .                                     ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                                 ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                               ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                  '                          ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                           ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                          ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                         ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>|<b>                                        ====###@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</b>|</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "<pre>===================================================================================================</pre>",
-        "delay": 0.1,
-        "speaker": "Narrator"
-      },
+      { "text": "orbiting a planet that you have never seen before.", "delay": 1, "speaker": "Narrator" }
 
-      {
-        "text": "orbiting a planet that you have never seen before.",
-        "delay": 1,
-        "speaker": "Narrator"
-      }
     ],
     "buttons": [{ "text": "Approach Door", "id": "door" }]
   },
 
   "door": {
     "content": [
-      {
-        "text": "You walk towards the door,",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "it opens automatically as you approach and closes behind you.",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "This room looks like a cafeteria, but it is in disarray.",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "At the far end of the room, someone sits at a table staring straight ahead.",
-        "delay": 1,
-        "speaker": "Narrator"
-      }
+      { "text": "You walk towards the door,", "delay": 1, "speaker": "Narrator" },
+      { "text": "it opens automatically as you approach and closes behind you.", "delay": 1, "speaker": "Narrator" },
+      { "text": "This room looks like a cafeteria, but it is in disarray.", "delay": 1, "speaker": "Narrator" },
+      { "text": "At the far end of the room, someone sits at a table staring straight ahead.", "delay": 1, "speaker": "Narrator" }
     ],
-    "buttons": [
-      { "text": "Approach Stranger", "id": "stranger" },
-      { "text": "Explore Cafeteria", "id": "cafeteria" }
-    ]
+    "buttons": [{ "text": "Approach Stranger", "id": "stranger" }, { "text": "Explore Cafeteria", "id": "cafeteria" }]
   },
 
   "stranger": {
     "content": [
-      {
-        "text": "The stranger looks at you blankly.",
-        "delay": 1,
-        "speaker": "Narrator"
-      }
+      { "text": "The stranger looks at you blankly.", "delay": 1, "speaker": "Narrator" }
     ],
-    "buttons": [
-      { "text": "Ask: \"Who are you?\"", "id": "q1_1" },
-      { "text": "Ask: \"What is going on here?\"", "id": "q2_1" },
-      { "text": "Leave", "id": "cafeteria2" }
-    ]
+    "buttons": [{ "text": "Ask: \"Who are you?\"", "id": "q1_1" }, { "text": "Ask: \"What is going on here?\"", "id": "q2_1" }, { "text": "Leave", "id": "cafeteria_2" }]
   },
 
   "q1_1": {
     "content": [
       { "text": "My name is Zack, ", "delay": 1, "speaker": "Zack" },
-      {
-        "text": "I've been on this station for years now.",
-        "delay": 1,
-        "speaker": "Zack"
-      }
+      { "text": "I've been on this station for years now.", "delay": 1, "speaker": "Zack" }
     ],
-    "buttons": [
-      { "text": "Ask: \"What is going on here?\"", "id": "q2_2" },
-      { "text": "Leave", "id": "cafeteria2" }
-    ]
+    "buttons": [{ "text": "Ask: \"What is going on here?\"", "id": "q2_2" }, { "text": "Leave", "id": "cafeteria_2" }]
   },
 
   "q1_2": {
     "content": [
       { "text": "My name is Zack, ", "delay": 1, "speaker": "Zack" },
-      {
-        "text": "I've been on this station for years now.",
-        "delay": 1,
-        "speaker": "Zack"
-      }
+      { "text": "I've been on this station for years now.", "delay": 1, "speaker": "Zack" }
     ],
-    "buttons": [{ "text": "Leave", "id": "cafeteria2" }]
+    "buttons": [{ "text": "Leave", "id": "cafeteria_2" }]
   },
 
   "q2_1": {
     "content": [
-      {
-        "text": "A civil war has broken out on the station.",
-        "delay": 1,
-        "speaker": "Zack"
-      },
-      {
-        "text": "Jeff has rallied the <b>Red Party</b> in a revolt against Carl and the <b>Blue Party</b>.",
-        "delay": 1,
-        "speaker": "Zack"
-      }
+      { "text": "A civil war has broken out on the station.", "delay": 1, "speaker": "Zack" },
+      { "text": "Jeff has rallied the <b>Red Party</b> in a revolt against Carl and the <b>Blue Party</b>.", "delay": 1, "speaker": "Zack" }
     ],
-    "buttons": [
-      { "text": "Ask: \"Who are you?\"", "id": "q1_2" },
-      { "text": "Leave", "id": "cafeteria2" }
-    ]
+    "buttons": [{ "text": "Ask: \"Who are you?\"", "id": "q1_2" }, { "text": "Leave", "id": "cafeteria_2" }]
   },
 
   "q2_2": {
     "content": [
-      {
-        "text": "A civil war has broken out on the station.",
-        "delay": 1,
-        "speaker": "Zack"
-      },
-      {
-        "text": "Jeff has rallied the <b>Red Party</b> in a revolt against Carl and the <b>Blue Party</b>.",
-        "delay": 1,
-        "speaker": "Zack"
-      }
+      { "text": "A civil war has broken out on the station.", "delay": 1, "speaker": "Zack" },
+      { "text": "Jeff has rallied the <b>Red Party</b> in a revolt against Carl and the <b>Blue Party</b>.", "delay": 1, "speaker": "Zack" }
     ],
-    "buttons": [{ "text": "Leave", "id": "cafeteria2" }]
+    "buttons": [{ "text": "Leave", "id": "cafeteria_2" }]
   },
 
   "cafeteria": {
     "content": [
-      {
-        "text": "You walk around the cafeteria.",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "It seems like a fight broke out here.",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "There are markings on the walls:",
-        "delay": 1,
-        "speaker": "Narrator"
-      },
-      {
-        "text": "one end of the room is marked with blue, and the other with red.",
-        "delay": 1,
-        "speaker": "Narrator"
-      }
+      { "text": "You walk around the cafeteria.", "delay": 1, "speaker": "Narrator" },
+      { "text": "It seems like a fight broke out here.", "delay": 1, "speaker": "Narrator" },
+      { "text": "There are markings on the walls:", "delay": 1, "speaker": "Narrator" },
+      { "text": "one end of the room is marked with blue, and the other with red.", "delay": 1, "speaker": "Narrator" }
     ],
     "buttons": [{ "text": "Approach Stranger", "id": "stranger" }]
   },
 
-  "cafeteria2": {
+  "cafeteria_2": {
     "content": [
-      {
-        "text": "You are faced with a choice:",
-        "delay": 1,
-        "speaker": "Narrator"
-      }
+      { "text": "You are faced with a choice:", "delay": 1, "speaker": "Narrator" }
     ],
     "buttons": [{ "text": "Follow Zack", "id": "end_1" }]
   },
@@ -327,11 +120,7 @@
   "end_1": {
     "content": [
       { "text": "Follow me!", "delay": 1, "speaker": "Zack" },
-      {
-        "text": "You chase after Zack, hearing the shouts and footsteps of the <b>Red Party</b> behind you.",
-        "delay": 1,
-        "speaker": "Narrator"
-      }
+      { "text": "You chase after Zack, hearing the shouts and footsteps of the <b>Red Party</b> behind you.", "delay": 1, "speaker": "Narrator" }
     ],
     "buttons": []
   }
